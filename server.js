@@ -12,11 +12,8 @@ import { handleImage, handleImageUrl } from "./controllers/image.js";
 const db = knex({
     client: 'pg',
     connection: {
-      host: 'postgresql-corrugated-36178',
-      port: 5432,
-      user: 'caraimanmario',
-      password: '',
-      database: 'smart-brain',
+      host: process.env.DATABASE_URL,
+      ssl: true
     },
 });
 
