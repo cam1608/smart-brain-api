@@ -12,7 +12,7 @@ import { handleImage, handleImageUrl } from "./controllers/image.js";
 const db = knex({
     client: 'pg',
     connection: {
-      host: '127.0.0.1',
+      host: 'postgresql-corrugated-36178',
       port: 5432,
       user: 'caraimanmario',
       password: '',
