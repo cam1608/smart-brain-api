@@ -13,7 +13,7 @@ const handleImage = (req, res, db) => {
 
 const handleImageUrl = async(req, res) => {
     const { input } = req.body;
-    const PAT = 'process.env.CLARIFAI_API_KEY';
+    const PAT = process.env.CLARIFAI_API_KEY;
     const USER_ID = 'clarifai';
     const APP_ID = 'main';
     const MODEL_ID = 'face-detection';
